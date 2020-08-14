@@ -12,7 +12,7 @@ input('Enter anything after scanning QR code')
 search = driver.find_element_by_class_name('_3FRCZ')
 search.send_keys(name)
 
-user = driver.find_element_by_class_name('eJ0yJ')
+user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
 
 msg_box = driver.find_elements_by_class_name('_3FRCZ')
